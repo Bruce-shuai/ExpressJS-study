@@ -7,6 +7,12 @@
   <title>Document</title>
 </head>
 <body>
-  Hello, <%= locals.text111 || 'Default' %> 
+  <form action="/users" method="POST">
+    <label>
+      名字：
+      <input type="text" name="username" value="<%= locals.username %>" />
+    </label>
+    <button type="submit">提交</button>
+  </form>
 </body>
 </html>
